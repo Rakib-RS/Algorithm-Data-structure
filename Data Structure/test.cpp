@@ -51,13 +51,14 @@ template <typename T>class vectorClass{
 
 };
 int main(){
-    vectorClass<int>vc;
-    vc.push(10);
-    vc.push(20);
-    vc.push(30);
-    vc.print();
-    for(int i =0; i<vc.size();i++){
-        int a = vc.get(i);
+    vectorClass<int>vc[10];
+    vc[2].push(10);
+    vc[2].push(20);
+    vc[2].push(30);
+    vc[1].push(10);
+    vc[1].print();
+    for(int i =0; i<vc[2].size();i++){
+        int a = vc[2].get(i);
         cout<<a<<" ";
     }
 
