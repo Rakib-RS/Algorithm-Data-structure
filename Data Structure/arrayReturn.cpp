@@ -13,6 +13,7 @@ int arr[100];
 
 int main()
 {
+    queue
 	int* ptr = fun(10);
 	int* pt = fun(100);
 	printf("%d %d", ptr[0], ptr[1]);
