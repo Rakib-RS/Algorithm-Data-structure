@@ -18,7 +18,7 @@ void combination(int arr[],int data[],int start,int end,int index,int r){
     }
 }
 int main(){
-    int arr[] ={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20},i,n,r,j,temp;
+    int arr[] ={1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20},i,n,r,j,temp;
     n = sizeof(arr)/sizeof(arr[0]);
     for(i = 0;i<n;i++){
         for(j =i+1;j<n;j++){
