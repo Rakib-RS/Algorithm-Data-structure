@@ -1,6 +1,18 @@
-root->next = newNode(2);
-    r = root->next;
-    r->next = newNode(3);
-    s = r->next;
-    s->next = newNode(4);
-    s->next->next = newNode(5);
+   part = "";
+           while(st.top() != '['){
+               part += st.top();
+               st.pop();
+           }
+           int count = 1;
+           st.pop();
+           k =0;
+           while(st.top()>='0' && st.top()<='9'){
+               k = k*count + (st.top()-'0');
+               count = count*10;
+               st.pop();
+           }
+           while(k--){
+               for(int j =0;j<part.size();j++){
+                   st.push(part[j]);
+               }
+           }
